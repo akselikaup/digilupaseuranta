@@ -105,6 +105,7 @@ color: #f0f0f0;
 }
 
 .timestamp {
+  margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #555;
 }
