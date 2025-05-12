@@ -1,0 +1,118 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* tai 'center' jos haluat pystyyn keskityksen */
+}
+
+.container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timestamp {
+color: #f0f0f0;
+}
+
+.boxes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.box {
+  background-color: #171212;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.box-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.box-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.box-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-buttons button {
+  font-size: 1.5rem;
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #b8b8b8;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.box-buttons button:hover {
+  background-color: #878787;
+}
+
+.bottom-section {
+  margin-top: 2rem;
+}
+
+.reset-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.reset-button:hover {
+  background-color: darkred;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsiivisuus */
+@media (max-width: 600px) {
+  .box-value {
+    font-size: 2.5rem;
+  }
+
+  .box-buttons button {
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
