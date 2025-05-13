@@ -1,11 +1,30 @@
+/* Yleinen ulkoasu ja tausta */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* tai 'center' jos haluat pystyyn keskityksen */
-  background-color: #555;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Kaikki tekstit valkoisiksi */
+body, h2, h3, h4, h5, h6, p, span, div, .box-title, .box-value, .timestamp, .bottom-section {
+  color: white;
+}
+
+h1 {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+/* Säilytä painikkeiden tekstiväri mustana */
+.box-buttons button {
+  color: black !important;
 }
 
 .container {
@@ -13,6 +32,7 @@ html, body {
   max-width: 900px;
   margin: auto;
   text-align: center;
+  width: 100%;
 }
 
 h1 {
@@ -22,7 +42,9 @@ h1 {
 }
 
 .timestamp {
-color: #f0f0f0;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #f0f0f0 !important;
 }
 
 .boxes {
@@ -35,7 +57,6 @@ color: #f0f0f0;
 
 .box {
   background-color: #171212;
-  color: white;
   border-radius: 10px;
   flex: 1 1 300px;
   max-width: 400px;
@@ -70,7 +91,6 @@ color: #f0f0f0;
   border: none;
   border-radius: 10px;
   background-color: #b8b8b8;
-  color: #000000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -106,13 +126,7 @@ color: #f0f0f0;
   background-color: darkred;
 }
 
-.timestamp {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsiivisuus */
+/* Responsiivisuus pienille näytöille */
 @media (max-width: 600px) {
   .box-value {
     font-size: 2.5rem;
