@@ -5,6 +5,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* tai 'center' jos haluat pystyyn keskityksen */
+  background-color: #555;
 }
 
 .container {
